@@ -1,9 +1,10 @@
 ---
-dev_container_image: "docker.io/library/archlinux:latest"
+dev_container_from_image: "docker.io/library/archlinux:latest"
 dev_container_family: archlinux
 
-dev_container_name: dev-container
+dev_container_name: dev-container-build
 dev_container_python_package: python3
+dev_container_image_name: "dev/dev-container"
 
 dev_container_locales:
   - en_US.UTF-8

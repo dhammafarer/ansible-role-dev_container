@@ -1,7 +1,7 @@
 ---
 - name: Create and start the build container.
   containers.podman.podman_container:
-    image: "{{ dev_container_image }}"
+    image: "{{ dev_container_from_image }}"
     name: "{{ dev_container_name }}"
     command: "tail -f /dev/null"
     state: started
@@ -63,7 +63,7 @@
 
 - name: Commit the container.
   ansible.builtin.command: >
-    podman commit {{ dev_container_name }} dev/{{ dev_container_name }}
+    podman commit {{ dev_container_name }} {{ dev_container_image_name }}
   changed_when: true
 
 - name: Remove the container.
