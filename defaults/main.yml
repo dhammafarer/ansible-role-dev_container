@@ -1,0 +1,27 @@
+---
+dev_container_image: "docker.io/library/archlinux:latest"
+dev_container_family: archlinux
+
+dev_container_name: dev-container
+dev_container_python_package: python3
+
+dev_container_locales:
+  - en_US.UTF-8
+  - zh_TW.UTF-8
+
+dev_container_packages:
+  - curl
+  - fd
+  - git
+  - man-db
+  - man-pages
+  - openssh
+  - ranger
+  - rsync
+  - sudo
+  - tree
+  - unrar
+  - unzip
+  - wget
+  - which
+  - zip
